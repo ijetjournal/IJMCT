@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="http://www.auricletechnologies.com/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>IJMCT - Volume1-Issue3</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="icon" type="image/png" href="http://www.internationaljournalisar.org/images/myicon.jpg" />
+<meta name="description" content="ISAR - International Scientific and Research Journals Journals" />
+<meta name="keywords" content="ISAR - International Scientific and Research Journals Journals" />
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/zerogrid.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/style.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/responsive.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/sitePopUp.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/reveal.css">
+
+<!--menu-->
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/ddsmoothmenu.css">
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/jquery.reveal.js"></script>
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/jquery-1.6.min.js"></script>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#dismiss').live('click', function(){
+		$('.output').fadeOut(0);
+	});
+	$('#admorebtn').live('click', function(){
+		$('#morefieldwrap').append('<p><input type="file" name="file[]" multiple="multiple" autocomplete="off" required="required" class="field filefield" /><input type="button" value="Remove" id="rmmorebtn" class="mrbtn" /></p>');
+	});
+	$('#rmmorebtn').live('click', function(){
+		$(this).parent('p').remove();
+	});
+	$('.downloadLink').live('click', function(){
+		var id = $(this).attr('id');
+		$.ajax({
+			type:"POST",
+			url:"http://www.internationaljournalisar.org/IMAGE/",
+			data:"cmd=downloads&id=" + id,
+			cache:false,
+			success: function(){}
+		});
+	});
+	$('#closeSitePopUp').live('click', function(){
+		$('.sitePopUp').fadeOut(0);
+	});
+});
+</script>
+
+
+<script type="text/javascript">
+try {
+} catch(err) {}</script>
+
+<header>
+   <div class="wrap-header zerogrid" style="position:relative;">
+     <img src="http://www.internationaljournalisar.org/images/myicon.jpg" alt="ISAR" width="185" height="200" /><br>
+
+<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:35px; color:#086A87; text-align:center;">ISAR - International Scientific and Research Journals</div>
+
+</div>
+<!--<div class="logocontent" style="left:350px; top:85px; position:absolute; font-size:25px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">International Journals </p>
+</div>-->
+<div class="logocontent" style="left:395px; top:90px; position:absolute; font-size:18px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">Scholary Peer Reviewed Research Publishing Journals </p></div>
+  </div>
+</header>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71638505-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div class="clear"></div>
+<div class="zerogrid">
+  <div >
+
+      <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="http://www.internationaljournalisar.org" style="width:110px;height:8px;line-height:9px; text-align:center;">Welcome</a></li>
+       <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">About ISAR</a>
+	             <ul>
+	    <li><a href="http://www.internationaljournalisar.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a></li>
+
+	               <li><a href="http://www.internationaljournalisar.org/Indexing.html" style="width:100px;height:8px;line-height:9px; text-align:left;">ISAR Indexing</a></li>
+	             </ul>
+        </li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/callforpaper.html" style="width:120px;height:8px;line-height:9px; text-align:center;">Call For Paper</a> </li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/Journals.html" style="width:120px;height:8px;line-height:9px; text-align:center;">ISAR Journals</a></li>
+        <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">For Author</a>
+          <ul>
+                <li class="subfirst"><a href="http://www.internationaljournalisar.org/publication-guidelines.html" style="width:135px;height:8px;line-height:9px; text-align:left;">Publication Guidelines</a></li>
+           <li><a href="http://www.internationaljournalisar.org/PeerReview.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Peer Review</a></li>
+            <li><a href="http://www.internationaljournalisar.org/Publication-Fee.html"  style="width:100px;height:8px;line-height:19px; text-align:left;">Processing Fee</a></li>
+             <li><a href="http://www.internationaljournalisar.org/Submit-Paper.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Submit Your Paper</a></li>
+          </ul>
+        </li>
+
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/faq.html" style="width:100px;height:8px;line-height:9px; text-align:center;">FAQs</a></li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/Contact.html" style="width:110px;height:8px;line-height:9px; text-align:center;">Contact Us</a></li>
+              </ul>
+    </div>
+</div><div class="clear"></div>
+<section id="content">
+  <div class="wrap-content zerogrid">
+
+     <marquee direction="left" scrollamount="3" scrolldelay="3">
+    <a name="up" id="up"></a><strong><font color="#000000">Anybody can submit their paper by mailing at IJMCTchief@gmail.com</font></strong>
+</marquee>
+
+
+	      <div class="clear"></div>
+	  <div id="sidebar" class="right col-1-4">
+  <div class="wrap-col">
+
+<div class="box">
+      <div class="heading">
+        <h2>ISAR - Menu</h2>
+      </div>
+      <div class="content" style="">
+	  					<ul>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/index.html" title="Home">Home</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/CurrentIssues.html" title="CurrentIssues">CurrentIssues</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/Archives.html" title="Archives">Archives</a></li>
+<li><a href="http://www.internationaljournalisar.org/callforpaper.html" title="Call For Paper">Call For Paper</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/Topics.html" title="Topics">Topics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/Publication-Fee.html" title="Publication Fee">Publication Charges</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/Editorialboard.html" title="Editorial Board">Editorial Board</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/images/IJMCT-PaperFormat.docx" title="Paper Template">Paper Template</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/images/IJMCT-CopyrightForm.docx" title=" Copy Right Form">Copy Right Form</a></li>
+ </ul>
+
+
+
+      </div>
+    </div>
+
+
+<div class="box">
+      <div class="heading">
+        <h2>ISAR - Journals</h2>
+      </div>
+      <div class="content" style="">
+<ul>
+<li><a href="http://www.ijretjournal.org/" target="blank" title="ISAR - IJRET">ISAR - International Journal of Research in Engineering Technology</a></li>
+<li><a href="http://www.ijcsejournal.org/" target="blank"  title="ISAR - IJCSE">ISAR - International Journal of Computer science engineering Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/index.html" title="ISAR - IJMCT">ISAR International Journal of Mathematics and Computing Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJPT/index.html" title="ISAR - IJPT"> ISAR International Journal of P2P Network and Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/index.html" title="ISAR - IJECE">ISAR International Journal of Electronics and Communication Ethics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJEEE/index.html" title="ISAR - IJEEE">ISAR International Journal of Electrical and Electronic Ethics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAP/index.html" title="ISAR - IJAP<">ISAR International Journal of Advances in Physics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAC/index.html" title="ISAR - IJAC">ISAR International Journal of Advances in chemistry</a></li>
+      </div>
+    </div>
+
+
+
+			    <div class="box">
+      <div class="heading">
+        <h2>ISAR - News</h2>
+      </div>
+<marquee scrollamount="2" direction="up" onmouseover="this.stop()"  onmouseout="this.start()" loop="true" width="100%">
+
+          <center> <font color="#086A87">
+					ISAR provides e-certificate of publication to authors.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					<a href="http://www.internationaljournalisar.org/callforpaper.html">Call For Paper</a> for Cureent Issues.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					 Inviting for Join As Reviewers.</font>
+					</center><br>
+
+                                        <center> <font color="#086A87">
+					 You can submit research article to <a href="http://www.internationaljournalisar.org/callforpaper.html"> respective journal mail id</a>.</font>
+					</center><br>
+
+				</marquee>
+
+
+    </div>
+
+
+
+
+<!--<div class="box">
+      <div class="heading">
+        <h2>Official FB Page</h2>
+      </div>
+      <div class="content" style="">
+	  					<iframe src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/ISAR-Journals-737205039741272&amp;width=200&amp;height=400&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:175px; height:230px;" allowTransparency="true"></iframe>
+
+
+      </div>
+    </div>-->
+
+
+		<div class="box">
+      <div class="heading">
+        <h2>Online Visiters</h2>
+      </div>
+		 <br><center><script type="text/javascript" src="http://widget.supercounters.com/flag.js"></script><script type="text/javascript">sc_flag(1160510,"FFFFFF","000000","cccccc",2,10,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript><br>
+
+
+			  </center>
+
+    </div>
+  </div>
+</div>
+      <!--=========================================contact query=====================================-->
+      <div id="main-content" class="col-3-6">
+        <div class="wrap-col">
+
+	          <article>
+            <div class="heading">
+              <center><h2>ISAR - International Journal of Mathematics and Computing Techniques</h2></center>
+      </div>
+<h2>Volume1 Issue3</h2>
+
+            <div class="content" style="text-align:justify;"><br>
+              <p>
+
+
+<!--table Start -->
+
+<table class="MsoTableGrid" style="max-width: 95%; border-collapse: collapse; border-spacing: 1px; padding: 3px; margin: 10px 0px; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 25px; border: none; background-color: #fffff" border="2" cellspacing="0" cellpadding="2">
+
+<tbody
+        <tr>
+            <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <div align="center"><strong>S.No.</strong></div></td>
+            <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <p align="center"><strong><center>Title/Author Name </center></strong></p></td>
+
+           <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <div align="center"><strong>Page No. </strong></div></td>
+        </tr>
+        <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">1. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Continuous user verification in social networking sites using facial Recognition</a></strong></p><br>
+              <p class="style2">Authors: D.Prabu, E.DilipKumar</p>
+
+<div id="content-dece">
+      <ul>
+
+ <li>[ <a href="#" class="big-link" data-reveal-id="1"><font color="red"> Abstract </font></a> ]
+[ <a href="#" class="big-link" data-reveal-id="2"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMCT/Volume1/Issue3/IJMCT-V1I3P1.pdf" target="balnk"><font color="red"> PDF </font></a>]</li>
+
+  <div id="1" class="reveal-modal">
+	 <h2>Abstract :-</h2>This paper proposes a service operator-aware trust scheme (SOTS) for resource matchmaking across multiple clouds. Through analyzing the built-in relationship between the users, the broker, and the service resources, this paper proposes a middleware framework of trust management that can effectively reduce user burden and improve system dependability. Based on multi-dimensional resource service operators, we model the problem of trust evaluation as a process of multi-attribute decision-making, and develop an adaptive trust evaluation approach based on information entropy theory. This adaptive approach can overcome the limitations of traditional trust schemes, whereby the trusted operators are weighted manually or subjectively. As a result, using SOTS, the broker can efficiently and accurately prepare the most trusted resources in advance, and thus provide more dependable resources to users. Our experiments yield interesting and meaningful observations that can facilitate the effective utilization of SOTS in a large-scale multi-cloud environment.<br /><strong><font color="red">Key word :- </font> </strong> Multiple Clouds, Middleware framework, Matchmaking.</font></p>Wx`
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="2" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">D.Prabu, E.DilipKumar <font color="red"><em><strong>"Continuous user verification in social networking sites using facial Recognition"</em></font></strong> Vol. 1 - Issue 3 ( May - June 2016), <strong>ISAR - International Journal of Mathematics and Computing Techniques</strong> , ISSN: 2455 &#x2D 7994 , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>1-5</strong></div></td>
+        </tr>
+
+         <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">2. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>System Model for Elimination of Attack on Multivariate Correlation analysis</a></strong></p><br>
+              <p class="style2">Authors: D.Pradeepa, A.Petrisisa</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="3"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="4"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMCT/Volume1/Issue3/IJMCT-V1I3P2.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="3" class="reveal-modal">
+	 <h2>Abstract :-</h2>Interconnected systems, such as Web servers, database servers, cloud computing servers and so on, are now underthreads from network attackers. As one of most common and aggressive means, denial-of-service (DoS) attacks cause serious impacton these computing systems. In this paper, we present a DoS attack detection system that uses multivariate correlation analysis(MCA) for accurate network traffic characterization by extracting the geometrical correlations between network traffic features. OurMCA-based DoS attack detection system employs the principle of anomaly based detection in attack recognition. This makes oursolution capable of detecting known and unknown DoS attacks effectively by learning the patterns of legitimate network traffic only.Furthermore, a triangle-area-based technique is proposed to enhance and to speed up the process of MCA. The effectiveness of ourproposed detection system is evaluated using KDD Cup 99 data set, and the influences of both non-normalized data and normalizeddata on the performance of the proposed detection system are examined. The results show that our system outperforms two otherpreviously developed state-of-the-art approaches in terms of detection accuracy.<br /><strong><font color="red">Key word :- </font> </strong> Multivariate Correlations, Network Traffic Characterization, Triangle area.</font></p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="4" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">D.Pradeepa, A.Petrisisa <font color="red"><em><strong>"System Model for Elimination of Attack on Multivariate Correlation analysis"</em></font></strong> Vol. 1 - Issue 3(May - June 2016), <strong>ISAR - International Journal of Mathematics and Computing Techniques</strong> , ISSN: 2455 &#x2D 7994 , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>6-12</strong></div></td>
+        </tr>
+
+     <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">3. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Towards Effective Bug Triage with Software Data Reduction Techniques</a></strong></p><br>
+              <p class="style2">Authors: G.Loganayagi, A.Petrisia</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="5"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="6"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMCT/Volume1/Issue3/IJMCT-V1I3P3.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="5" class="reveal-modal">
+	 <h2>Abstract :-</h2>Software companies spend over 45 percent of cost in dealing with software bugs. An inevitable step of fixing bugs is bug triage, which aims to correctly assign a developer to a new bug. To decrease the time cost in manual work, text classification techniques are applied to conduct automatic bug triage. We address the problem of data reduction for bug triage, i.e., how to reduce the scale and improve the quality of bug data. We combine instance selection with feature selection to simultaneously reduce data scale on the bug dimension and the word dimension. To determine the order of applying instance selection and feature selection, we extract attributes from historical bug data sets and build a predictive model for a new bug data set. We empirically investigate the performance of data reduction on totally 600,000 bug reports of two large open source projects, namely Eclipse and Mozilla. The results show that our data reduction can effectively reduce the data scale and improve the accuracy of bug triage. Our work provides an approach to leveraging techniques on data processing to form reduced and high-quality bug data in software development and maintenance.</font></p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="6" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">G.Loganayagi, A.Petrisia<font color="red"><em><strong>"Earth Process Automation Techniques "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>ISAR - International Journal of Mathematics and Computing Techniques</strong> , ISSN: 2455 &#x2D 7994 , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>13 - 16</strong></div></td>
+        </tr>
+
+
+
+<!--<tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">4. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Bomb Detection Robotics using Embedded Controller </a></strong></p><br>
+              <p class="style2">Authors: Gurdas , Karan </p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="7"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="8"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P4.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="7" class="reveal-modal">
+	 <h2>Abstract :-</h2> Now-a-days, robotic systems have less manual operations, flexibility, dependability and accurate. Detect the bomb by transfer the robot to the particular place. A person can work the system from personal computer during wireless RF control. Aims at designing and execute the bomb ,fire and obstacle exposure. The IR sensor is a pair sensors has a beneficiary and a transmitter sensor. In the current scenario of war situations, unmanned systems plays very main role to minimize human losses. This robot is fitted with motors. A micro controller is used to manage all operations. According to the motor operations the robot will operate as individual in program. Whenever any fire is detected, the Buzzer will ON.<br /><strong><font color="red">Key word :- </font> </strong> Bomb Detection, IR sensor, Robotics, Web server.</p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="8" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Gurdas , Karan , <font color="red"><em><strong>"Bomb Detection Robotics using Embedded Controller "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>ISAR - International Journal of Mathematics and Computing Techniques</strong> , ISSN: 2455 &#x2D 7994 , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>12-15</strong></div></td>
+        </tr>
+
+
+
+ <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">5. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Hybrid Design Electro thermal Polymeric Micro gripper with Integrated Force Sensor</a></strong></p><br>
+              <p class="style2">Authors: Utpal , Nihal</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="9"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="10"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMCT/Volume1/Issue1/IJMCT-V1I1P5.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="9" class="reveal-modal">
+	 <h2>Abstract :-</h2>Micro grippers are characteristic MEMS devices used to pick, hold and transport micro-objects. Micro grippers are usually used in the field of micro-assembly, micro-surgery and management of micro-particles. This force sensing declaration provides feedback in the range of the forces that overlook the micro management process. The micro gripper, fabricated by electro-discharge machining, features force sensing ability, large force output, and large displacements to contain objects of various sizes. The design parameters for the surrounded electromagnetic actuators were selected on the basis of finite element sensitivity analysis. The concept is also demonstrated with HeLa cells, thus providing a useful tool in biological research and cell assays.<br /><strong><font color="red">Key word :- </font></strong> Hybrid, micro gripper,sensor.</p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="10" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Utpal , Nihal, <font color="red"><em><strong>"	Hybrid Design Electro thermal Polymeric Micro gripper with Integrated Force Sensor "</em></font></strong> Vol. 1 - Issue 1 ( Nov - Dec 2015), <strong>ISAR - International Journal of Mathematics and Computing Techniques</strong> , ISSN: 2455 &#x2D 7994 , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>16-19</strong></div></td>
+        </tr>-->
+
+
+
+      </table>
+
+<br/><br/>
+
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+<div class="sitePopUp">
+	<button type="button" id="closeSitePopUp"></button>
+	<a href="http://www.internationaljournalisar.org/Journals.html" target="">
+		<div class="sitePopUpInner">
+			<b style="font-size:15px;color:#CB0707;">ISAR- Journals</font></b><br>
+
+			<center style="margin-top:10px;"><img src="http://www.internationaljournalisar.org/images/paper.gif" width="75%" hieght="50%" /></center>
+<center><img src="http://www.internationaljournalisar.org/images/enter.gif" alt="Click Here" /></center>
+			<!--<b style="font-size:13px;color:#0B0B61;">ISAR -  Journals</b>-->
+		</div>
+	</a>
+</div>
+
+
+
+  <div class="copyright">
+    <p>Copyright &copy;2016 <a href="http://www.internationaljournalisar.org" target="blank"><font size="1"> ISAR - International Scientific And Research Group</font></a>, All rights reserved </font></p>
+  </div>
+</footer></body>
+</html>
